@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#082f6b">
+  <meta name="description" content="FORTICAM smart surveillance and CCTV solutions for homes, offices, shops and industries. Camera installation, mobile monitoring and access control.">
+  <title>FORTICAM | Smart Surveillance. Smarter Protection.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--navy:#082f6b;--blue:#075bc4;--cyan:#19a8e8;--ink:#10233f;--muted:#5e6d82;--pale:#f1f6fc;--line:#dce7f3;--white:#fff}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:"DM Sans",sans-serif;color:var(--ink);background:#fff}a{color:inherit;text-decoration:none}.wrap{width:min(1160px,92%);margin:auto}
+    .topbar{background:#061f48;color:#dceaff;font-size:13px;padding:9px 0}.topbar .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+    header{position:sticky;top:0;z-index:20;background:#ffffffed;backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:22px}
+    .brand{font:800 27px Manrope,sans-serif;letter-spacing:-1.4px;color:var(--navy);display:flex;align-items:center;gap:10px}.brandmark{width:38px;height:38px;border:3px solid var(--blue);border-radius:12px 12px 17px 17px;display:grid;place-items:center;color:var(--blue);font-size:21px}
+    nav{display:flex;gap:27px;align-items:center;font-weight:700;font-size:14px;color:#344761}nav a:hover{color:var(--blue)}.btn{display:inline-flex;align-items:center;justify-content:center;border-radius:999px;padding:13px 21px;font-weight:800;background:var(--blue);color:white;box-shadow:0 8px 22px #075bc42b}.btn:hover{background:var(--navy);transform:translateY(-1px)}.btn.outline{background:white;color:var(--navy);border:1px solid #b8cbe1;box-shadow:none}
+    .hero{background:linear-gradient(115deg,#f3f8ff 0%,#e7f1ff 55%,#d9eaff 100%);padding:64px 0 52px;overflow:hidden}.hero-grid{display:grid;grid-template-columns:.92fr 1.08fr;gap:42px;align-items:center}.eyebrow{display:inline-flex;gap:9px;align-items:center;color:var(--blue);font-size:12px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase}.eyebrow:before{content:"";width:25px;height:2px;background:var(--cyan)}
+    h1,h2,h3{font-family:Manrope,sans-serif}h1{font-size:clamp(38px,5vw,62px);line-height:1.07;letter-spacing:-2.5px;margin:17px 0}.hero p{font-size:17px;line-height:1.75;color:#53657c;max-width:530px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin:27px 0}.trust{display:flex;gap:24px;flex-wrap:wrap;color:#53657c;font-size:13px;font-weight:700}.trust span:before{content:"✓";color:#0874cb;font-weight:900;margin-right:7px}.hero-visual{position:relative}.hero-visual img{width:100%;display:block;border-radius:24px;box-shadow:0 24px 60px #173d692b}.floating{position:absolute;right:-14px;bottom:18px;background:white;padding:15px 19px;border-radius:15px;box-shadow:0 12px 35px #0c2b5526;font-weight:800;color:var(--navy)}.floating small{display:block;color:var(--muted);font-weight:600;margin-top:3px}
+    .stats{padding:24px 0;border-bottom:1px solid var(--line)}.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}.stat{padding:5px 18px;border-right:1px solid var(--line)}.stat:last-child{border:0}.stat strong{display:block;color:var(--navy);font:800 21px Manrope}.stat small{color:var(--muted);font-weight:600}
+    section{padding:78px 0}.section-head{text-align:center;max-width:700px;margin:0 auto 38px}.section-head h2{font-size:clamp(29px,4vw,42px);letter-spacing:-1.3px;margin:12px 0}.section-head p{color:var(--muted);line-height:1.7;margin:0}
+    .products{background:var(--pale)}.product-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.product{background:white;border:1px solid var(--line);border-radius:18px;overflow:hidden;transition:.2s}.product:hover{transform:translateY(-4px);box-shadow:0 16px 35px #173d6914}.product img{width:100%;height:190px;object-fit:contain;background:#f8fbff;padding:15px}.product .info{padding:18px 20px}.product h3{font-size:18px;margin:0 0 7px}.product p{font-size:14px;color:var(--muted);line-height:1.6;margin:0}
+    .services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.service{padding:24px;border:1px solid var(--line);border-radius:17px}.service .ico{width:43px;height:43px;border-radius:13px;background:#e8f3ff;color:var(--blue);display:grid;place-items:center;font-size:22px}.service h3{font-size:18px;margin:15px 0 7px}.service p{font-size:14px;line-height:1.65;color:var(--muted);margin:0}
+    .feature{background:#071f47;color:white}.feature-grid{display:grid;grid-template-columns:1fr 1fr;gap:42px;align-items:center}.feature h2{font-size:clamp(29px,4vw,42px);line-height:1.2;letter-spacing:-1px}.feature p{color:#c6d6ec;line-height:1.75}.feature img{width:100%;border-radius:20px;display:block}.feature-list{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:25px 0}.feature-list span{font-weight:700;font-size:14px}.feature-list span:before{content:"✓";color:#54c8ff;margin-right:9px}
+    .gallery{background:#f5f8fc}.media-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:20px;align-items:stretch}.video-card,.gallery-card{background:white;border:1px solid var(--line);border-radius:18px;padding:12px;box-shadow:0 10px 30px #0a2d5510}.video-card video{width:100%;display:block;border-radius:12px;background:#071f47;max-height:430px}.media-caption{padding:14px 7px 5px}.media-caption strong{display:block;font:800 17px Manrope}.media-caption small{color:var(--muted)}.gallery-card img{width:100%;height:100%;max-height:460px;object-fit:contain;border-radius:12px;background:#f7faff}
+    .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.step{padding:22px;border-top:3px solid var(--blue);background:#f7faff;border-radius:0 0 15px 15px}.step b{font:800 28px Manrope;color:#9bbde5}.step h3{font-size:17px;margin:10px 0 6px}.step p{font-size:13px;line-height:1.6;color:var(--muted);margin:0}
+    .cta{padding:0 0 78px}.cta-box{background:linear-gradient(120deg,#075bc4,#062d68);color:white;border-radius:23px;padding:38px 42px;display:flex;align-items:center;justify-content:space-between;gap:25px}.cta h2{font-size:30px;margin:0 0 8px}.cta p{margin:0;color:#d5e6ff}.cta .btn{background:white;color:var(--navy);box-shadow:none;white-space:nowrap}
+    footer{background:#061a3a;color:#c5d5e9;padding:48px 0 22px}.footer-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:35px}.footer-brand{color:white}.footer-grid h3{color:white;font-size:15px}.footer-grid p,.footer-grid a{font-size:13px;line-height:1.8;color:#c5d5e9}.footer-grid a:hover{color:white}.copyright{border-top:1px solid #254064;margin-top:32px;padding-top:18px;font-size:12px;color:#91a9c6;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+    @media(max-width:850px){nav{gap:14px}nav a:not(.btn){display:none}.hero-grid,.feature-grid,.media-grid{grid-template-columns:1fr}.hero{padding:44px 0}.hero-visual{max-width:650px}.product-grid,.services-grid{grid-template-columns:repeat(2,1fr)}.steps{grid-template-columns:repeat(2,1fr)}.stats-grid{grid-template-columns:repeat(2,1fr)}.stat:nth-child(2){border:0}}
+    @media(max-width:520px){.nav{height:66px}.brand{font-size:23px}.nav>.btn{padding:11px 14px;font-size:12px}.hero p{font-size:15px}.product-grid,.services-grid,.steps{grid-template-columns:1fr}.stats-grid{gap:12px}.stat{padding:8px 10px}.stat strong{font-size:18px}.floating{right:8px;bottom:8px;font-size:12px}.floating small{font-size:10px}section{padding:58px 0}.cta-box{padding:27px 23px;align-items:flex-start;flex-direction:column}.footer-grid{grid-template-columns:1fr;gap:18px}.feature-list{grid-template-columns:1fr 1fr}}
+  </style>
+</head>
+<body>
+  <div class="topbar"><div class="wrap"><span>Smart surveillance · Smarter protection</span><span>Call us: <a href="tel:+919217295528">+91 92172 95528</a> &nbsp; | &nbsp; Since 2009</span></div></div>
+  <header><div class="wrap nav">
+    <a class="brand" href="#home"><span class="brandmark">◉</span> FORTICAM</a>
+    <nav><a href="#products">Cameras</a><a href="#services">Solutions</a><a href="#gallery">Gallery & video</a><a href="#process">How we work</a><a class="btn" href="#contact">Book a site visit</a></nav>
+  </div></header>
+  <main>
+    <section class="hero" id="home"><div class="wrap hero-grid">
+      <div><span class="eyebrow">CCTV & smart security solutions</span><h1>See more.<br>Protect what matters.</h1>
+        <p>Smart surveillance and security systems for homes, offices, shops and industries. From camera selection and installation to mobile viewing and dependable support, Forticam helps make every space safer.</p>
+        <div class="hero-actions"><a class="btn" href="#contact">Book a site visit ↗</a><a class="btn outline" href="#products">Explore cameras</a></div>
+        <div class="trust"><span>Home & business security</span><span>Mobile monitoring</span><span>Installation support</span></div>
+      </div>
+      <div class="hero-visual"><img src="assets/smart-surveillance-solutions.png" alt="FORTICAM smart surveillance product range and security solutions"><div class="floating">FORTICAM <small>Smart protection, every day</small></div></div>
+    </div></section>
+    <div class="stats"><div class="wrap stats-grid">
+      <div class="stat"><strong>Since 2009</strong><small>Security experience</small></div><div class="stat"><strong>Home to industry</strong><small>Spaces we help protect</small></div><div class="stat"><strong>Live on mobile</strong><small>Remote camera viewing</small></div><div class="stat"><strong>End-to-end</strong><small>Plan, install & handover</small></div>
+    </div></div>
+    <section class="products" id="products"><div class="wrap">
+      <div class="section-head"><span class="eyebrow">Camera range</span><h2>The right view for every space</h2><p>Choose from camera and recording options for indoor, outdoor and business environments. We can help match the setup to your site.</p></div>
+      <div class="product-grid">
+        <article class="product"><img src="assets/camera-lineup.png" alt="FORTICAM PTZ speed dome, bullet and Wi-Fi cameras"><div class="info"><h3>PTZ speed dome cameras</h3><p>Pan, tilt and zoom coverage for larger spaces and areas that need flexible viewing.</p></div></article>
+        <article class="product"><img src="assets/camera-lineup.png" alt="FORTICAM bullet CCTV camera" style="object-position:50% 50%"><div class="info"><h3>Bullet cameras</h3><p>Fixed-view cameras for entrances, perimeters, parking and outdoor monitoring.</p></div></article>
+        <article class="product"><img src="assets/camera-lineup.png" alt="FORTICAM Wi-Fi indoor camera"><div class="info"><h3>Wi-Fi cameras</h3><p>Compact cameras for convenient indoor monitoring and viewing from your phone.</p></div></article>
+        <article class="product"><img src="assets/forticam-camera-catalog.jpeg" alt="FORTICAM dome camera range"><div class="info"><h3>Dome & network cameras</h3><p>Discreet ceiling-mounted and network camera options for offices and corridors.</p></div></article>
+        <article class="product"><img src="assets/product-catalog.png" alt="FORTICAM CCTV recorders and camera products"><div class="info"><h3>DVR & NVR recorders</h3><p>Recording and playback solutions to suit your camera system and storage needs.</p></div></article>
+        <article class="product"><img src="assets/forticam-camera-catalog.jpeg" alt="FORTICAM video door phone and access devices"><div class="info"><h3>Video door phones & access</h3><p>See visitors and manage entry with suitable door phone and access-control systems.</p></div></article>
+      </div>
+    </div></section>
+    <section id="services"><div class="wrap"><div class="section-head"><span class="eyebrow">Complete solutions</span><h2>More than cameras</h2><p>Bring key parts of your security setup together with a system planned around your property.</p></div>
+      <div class="services-grid">
+        <article class="service"><div class="ico">◉</div><h3>CCTV installation</h3><p>Camera placement, wiring, setup and testing for homes and commercial properties.</p></article>
+        <article class="service"><div class="ico">▣</div><h3>Mobile surveillance</h3><p>Connect compatible systems to your phone for remote live viewing and playback.</p></article>
+        <article class="service"><div class="ico">⌁</div><h3>Video door phones</h3><p>View and communicate with visitors at your entrance from an indoor screen.</p></article>
+        <article class="service"><div class="ico">▤</div><h3>Time & attendance</h3><p>Attendance and access devices for teams and workplace operations.</p></article>
+        <article class="service"><div class="ico">◈</div><h3>Storage & recording</h3><p>Recorder and storage options selected to fit the number of cameras and retention needs.</p></article>
+        <article class="service"><div class="ico">⚙</div><h3>Support & maintenance</h3><p>Help with system checks, configuration and keeping your security setup working.</p></article>
+      </div>
+    </div></section>
+    <section class="feature"><div class="wrap feature-grid">
+      <div><span class="eyebrow" style="color:#69c9ff">Stay connected</span><h2>Your security view, wherever you are.</h2><p>With a compatible connected camera system, check live views from your mobile device and keep an eye on the places that matter. Our team can help configure the app and show you how to use it.</p>
+        <div class="feature-list"><span>Live camera viewing</span><span>Indoor & outdoor coverage</span><span>Recording options</span><span>System handover</span></div><a class="btn" href="#contact">Discuss your setup</a></div>
+      <img src="assets/brand-introduction.png" alt="FORTICAM brand introduction showing security cameras, monitoring and control room"></div>
+    </section>
+    <section class="gallery" id="gallery"><div class="wrap"><div class="section-head"><span class="eyebrow">FORTICAM in action</span><h2>Watch our introduction</h2><p>Explore the FORTICAM promotional video and product visuals.</p></div>
+      <div class="media-grid"><div class="video-card"><video controls playsinline preload="metadata" poster="assets/smart-surveillance-solutions.png"><source src="assets/forticam-promo-video.mp4" type="video/mp4">Your browser does not support HTML video.</video><div class="media-caption"><strong>FORTICAM — Smart surveillance solutions</strong><small>Promotional video</small></div></div>
+      <div class="gallery-card"><img src="assets/product-catalog.png" alt="FORTICAM cameras, recorders and smart security product categories"></div></div>
+    </div></section>
+    <section id="process"><div class="wrap"><div class="section-head"><span class="eyebrow">Simple, clear process</span><h2>From site visit to system handover</h2><p>A practical process to plan a security setup around your property.</p></div>
+      <div class="steps"><article class="step"><b>01</b><h3>Site visit</h3><p>Review entrances, coverage areas, blind spots, power and connectivity.</p></article><article class="step"><b>02</b><h3>System plan</h3><p>Recommend camera types, placement and recording options for the site.</p></article><article class="step"><b>03</b><h3>Installation</h3><p>Fit and connect the equipment, then test the system.</p></article><article class="step"><b>04</b><h3>Handover</h3><p>Show you live viewing, playback and the key system functions.</p></article></div>
+    </div></section>
+    <div class="cta" id="contact"><div class="wrap"><div class="cta-box"><div><h2>Let's secure your space.</h2><p>Talk to FORTICAM about a CCTV or smart security solution.</p></div><a class="btn" href="tel:+919217295528">Call +91 92172 95528</a></div></div></div>
+  </main>
+  <footer><div class="wrap"><div class="footer-grid">
+    <div><a class="brand footer-brand" href="#home"><span class="brandmark" style="border-color:#75baff;color:#75baff">◉</span> FORTICAM</a><p>Smart surveillance and smarter protection for safer spaces.</p><p>Serving homes, offices, shops and businesses.</p></div>
+    <div><h3>Contact</h3><p>Phone: <a href="tel:+919217295528">9217295528</a><br>Email: <a href="mailto:forticam21@gmail.com">forticam21@gmail.com</a></p><p>Sector 86, BPTP World Street, Faridabad, Haryana 121006</p></div>
+    <div><h3>Explore</h3><p><a href="#products">Cameras & recorders</a><br><a href="#services">Security solutions</a><br><a href="#gallery">Video & gallery</a><br><a href="#process">How we work</a></p></div>
+  </div><div class="copyright"><span>© 2026 FORTICAM. All rights reserved.</span><span>Smart surveillance · Smarter protection</span></div></div></footer>
+</body>
+</html>
